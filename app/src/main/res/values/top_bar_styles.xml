@@ -1,0 +1,174 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 左侧返回键 -->
+    <style name="top_bar_back" parent="@style/layout_left_img_style">
+        <item name="android:contentDescription">@string/cancel</item>
+        <item name="android:src">@drawable/btn_back_red_selector</item>
+    </style>
+
+    <style name="top_bar_white_back" parent="@style/layout_left_img_style">
+        <item name="android:contentDescription">@string/cancel</item>
+        <item name="android:src">@drawable/btn_back_white_selector</item>
+    </style>
+    <!-- 左侧图片键 -->
+
+    <style name="top_bar_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <!-- 右侧分享键 -->
+    <style name="top_bar_share" parent="@style/top_bar_image">
+        <item name="android:contentDescription">@string/share</item>
+        <item name="android:src">@drawable/btn_share_red_selector</item>
+    </style>
+
+    <style name="top_bar_white_share" parent="@style/top_bar_image">
+        <item name="android:contentDescription">@string/share</item>
+        <item name="android:src">@drawable/btn_share_white_selector</item>
+    </style>
+    <!-- 右侧分享键 -->
+    <!-- 右侧收藏键 -->
+    <style name="top_bar_collect" parent="@style/top_bar_image">
+        <item name="android:contentDescription">@string/collect</item>
+        <item name="android:src">@drawable/btn_collect_red_selector</item>
+    </style>
+
+    <style name="top_bar_white_collect" parent="@style/top_bar_image">
+        <item name="android:contentDescription">@string/collect</item>
+        <item name="android:src">@drawable/btn_collect_white_selector</item>
+    </style>
+    <!-- 右侧收藏键 -->
+
+    <style name="top_bar_leftimg" parent="@style/layout_right_img_style">
+        <item name="android:contentDescription">@string/finish</item>
+    </style>
+    <!-- 右侧图片键 -->
+    <style name="top_bar_rightimg" parent="@style/layout_right_img_style">
+        <item name="android:contentDescription">@string/finish</item>
+    </style>
+
+    <!-- 左侧取消键 -->
+    <style name="top_bar_left_cancel" parent="@style/layout_left_text_style">
+        <item name="android:contentDescription">@string/cancel</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+
+    <!-- 右侧取消键 -->
+    <style name="top_bar_right_cancel" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/cancel</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+
+    <style name="top_bar_right_red_cancel" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/cancel</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+    <!-- 右侧完成键 -->
+    <style name="top_bar_right_finish" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/finish</item>
+        <item name="android:text">@string/finish</item>
+    </style>
+    <!-- 右侧完成键 -->
+    <style name="top_bar_right_red_finish" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/finish</item>
+        <item name="android:text">@string/finish</item>
+    </style>
+
+    <style name="top_bar_right_edit" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/edit</item>
+        <item name="android:text">@string/edit</item>
+    </style>
+
+    <style name="top_bar_right_txt" parent="@style/layout_right_text_style">
+        <item name="android:contentDescription">@string/finish</item>
+    </style>
+    <!-- 中间标题 -->
+    <style name="top_bar_center_title" parent="@style/layout_center_text_style">
+        <item name="android:contentDescription">@string/title</item>
+        <!-- <item name="android:text">@string/title</item> -->
+    </style>
+
+    <!--设置中单个一项样式-->
+    <style name="bar_top_style">
+        <item name="android:contentDescription">@string/title</item>
+        <item name="android:background">@drawable/bar_top_style</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--设置中单个一项样式-->
+    <!--设置中一组外围线条样式-->
+    <style name="bar_group_style">
+        <item name="android:contentDescription">@string/title</item>
+        <item name="android:background">@drawable/bar_one_style</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--设置中一组外围线条样式-->
+
+    <!--设置中单个一项样式-->
+    <style name="bar_item_style">
+        <item name="android:contentDescription">@string/title</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!-- 左侧图片样式 -->
+    <style name="layout_left_img_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <!-- 右侧图片样式 -->
+    <style name="layout_right_img_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <!-- 左侧文字样式 -->
+    <style name="layout_left_text_style" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">@dimen/setting_title_text_size</item>
+        <item name="android:textColor">@color/text_color_red_selector</item>
+    </style>
+
+    <!-- 右侧文字样式 -->
+    <style name="layout_right_text_style" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">@dimen/setting_title_text_size</item>
+        <item name="android:textColor">@color/text_color_red_selector</item>
+    </style>
+    <!-- 中间文字样式 -->
+    <style name="layout_center_text_style" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/setting_title_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_pink_ff5a5f</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

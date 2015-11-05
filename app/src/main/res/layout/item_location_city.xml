@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_list_selector"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="11dp"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:textColor="@color/a333333"
+        android:textSize="17sp" />
+
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/include_line" />
+</LinearLayout>

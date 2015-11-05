@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--热门城市-->
+    <string-array name="hot_city_region_name">
+        <item>上海</item>
+        <item>北京</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>武汉</item>
+        <item>天津</item>
+        <item>西安</item>
+        <item>南京</item>
+        <item>杭州</item>
+        <item>成都</item>
+        <item>重庆</item>
+    </string-array>
+    <string-array name="hot_city_region_id">
+        <item>793</item>
+        <item>2</item>
+        <item>1946</item>
+        <item>1970</item>
+        <item>1691</item>
+        <item>19</item>
+        <item>2812</item>
+        <item>812</item>
+        <item>926</item>
+        <item>2281</item>
+        <item>2241</item>
+    </string-array>
+</resources>

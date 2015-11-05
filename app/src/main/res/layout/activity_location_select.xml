@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_linear_bg_style">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bar_top_style"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/top_bar_back"
+            style="@style/top_bar_back"
+            android:src="@drawable/btn_nav_close" />
+
+        <TextView
+            android:id="@+id/top_bar_center_title"
+            style="@style/top_bar_center_title"
+            android:text="@string/location_current_city" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/e6e6e6"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corner_edittext_city_search_bg_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/btn_dis_searchcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="11dp"
+                android:src="@drawable/btn_dis_searchcity" />
+
+            <EditText
+                android:id="@+id/edit_query_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_dis_searchcity"
+                android:background="@null"
+                android:hint="输入城市名或拼音查询"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="11dp"
+                android:textColor="@color/a333333"
+                android:textColorHint="@color/a999999"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:id="@+id/panel_location_city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white">
+
+            <ListView
+                android:id="@+id/country_lvcountry"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollingCache="false" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/theme_pink_ff5a5f"
+                android:textSize="56sp"
+                android:visibility="gone" />
+
+            <com.halobear.wedqq.special.ui.location.select.view.SideBar
+                android:id="@+id/sidebar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/panel_location_city_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollingCache="false"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

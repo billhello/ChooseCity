@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/city_letter"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:layout_weight="1.0"
+        android:background="@color/F8F8F8"
+        android:tag="sticky"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:textColor="@color/a666666" />
+
+    <com.halobear.wedqq.special.view.scrollview.NestListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="11dp"
+        android:scrollingCache="false" />
+
+</LinearLayout>
