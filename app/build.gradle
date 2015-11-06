@@ -9,11 +9,6 @@ dependencies {
     compile files('libs/MapApiLocation_1.3.3.jar')
     /*高德地图*/
 
-    /*个推*/
-    compile files('libs/GetuiExt-2.0.3.jar')
-    compile files('libs/GetuiSdk2.6.1.0.jar')
-    /*个推*/
-
     /*talkingdata*/
     compile files('libs/TalkingDataAnalytics_V2.0.4.jar')
     /*talkingdata*/
@@ -87,11 +82,11 @@ android {
 
     defaultConfig {
         // 应用的包名
-        applicationId "com.halobear.wedqq"
+        applicationId "bill.choosecity"
         minSdkVersion 14
         targetSdkVersion 19
-        versionCode 250
-        versionName "2.5.0"
+        versionCode 1
+        versionName "1.0.0"
         // dex突破65535的限制
         multiDexEnabled true
         // 默认是umeng的渠道
@@ -99,10 +94,7 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("../halobear_keystore")
-            keyAlias 'halobear'
-            keyPassword 'halo2014'
-            storePassword 'halo2014'
+
         }
     }
     dexOptions {
@@ -228,7 +220,6 @@ android {
          anzhi {}
          huawei {}*/
 
-        /*幻熊结婚圈－婚礼必备*/
         /*     baidu {}
              baidu91 {}
              baiduhiapk {}

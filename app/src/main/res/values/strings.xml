@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ChooseCity</string>
+    <string name="map_location">地图</string>
+    <string name="map_navigation">导航</string>
+    <string name="location_current_city">当前城市</string>
+
+    <string name="title">标题</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="read">阅读</string>
+    <string name="share">分享</string>
+    <string name="collect">收藏</string>
+    <string name="more">更多</string>
+    <string name="love">喜欢</string>
+    <string name="comment">评论</string>
+    <string name="person">人</string>
+    <string name="reply">回复</string>
 </resources>

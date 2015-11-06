@@ -39,8 +39,8 @@
                 android:id="@+id/btn_current_location"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="12dp"
                 android:layout_marginLeft="19dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/btn_location_city_selector"
                 android:gravity="center"
                 android:text="正在定位..."
@@ -65,7 +65,7 @@
             android:textColor="@color/a666666"
             android:textSize="16sp" />
 
-        <com.halobear.wedqq.special.view.scrollview.NestGridView
+        <bill.common.view.NestGridView
             android:id="@+id/grid_hot_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,13 +73,13 @@
             android:layout_marginTop="12dp"
             android:background="@null"
             android:divider="@null"
-            android:verticalSpacing="12dp"
-            android:horizontalSpacing="12dp"
             android:fadingEdge="none"
             android:fastScrollEnabled="false"
+            android:horizontalSpacing="12dp"
             android:listSelector="@android:color/transparent"
             android:numColumns="3"
-            android:scrollingCache="false" />
+            android:scrollingCache="false"
+            android:verticalSpacing="12dp" />
 
     </LinearLayout>
 

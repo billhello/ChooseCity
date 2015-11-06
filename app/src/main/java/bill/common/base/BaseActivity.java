@@ -6,19 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View.OnClickListener;
 
-import com.halobear.awedqq.home.ui.common.bean.ViewBean;
-import com.halobear.wedqq.R;
-import com.halobear.wedqq.common.MyImageLoader;
-import com.halobear.wedqq.common.tools.ToastUtil;
-import com.halobear.wedqq.special.material.MyMaterialDialog;
-import com.halobear.wedqq.special.ui.easemob.applib.controller.HXSDKHelper;
-import com.halobear.wedqq.special.ui.user.util.LoginConsts;
-import com.halobear.wedqq.special.ui.user.util.LoginUtil;
-import com.halobear.wedqq.tool.http.MyHttpRequestFinishInterface;
-import com.halobear.wedqq.tool.http.MyHttpRequestManager;
-import com.halobear.wedqq.tool.http.NetWorkBroadcastInterface;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.tendcloud.tenddata.TCAgent;
+
+import bill.common.utils.MyImageLoader;
 
 
 /**

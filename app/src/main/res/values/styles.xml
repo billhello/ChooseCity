@@ -7,5 +7,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!--界面背景颜色-->
+    <style name="activity_bg_style">
+        <item name="android:background">@color/f7f7f6</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
 
+    <style name="activity_linear_bg_style" parent="activity_bg_style">
+        <item name="android:orientation">vertical</item>
+    </style>
 </resources>

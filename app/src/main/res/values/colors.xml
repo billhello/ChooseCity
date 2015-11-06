@@ -4,5 +4,15 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
-    <color name="detail_line_grey">#cecece</color>
+    <color name="cecece">#cecece</color>
+    <color name="a333333">#333333</color>
+    <color name="a666666">#666666</color>
+    <!--app主色调-->
+    <color name="theme_pink_ff5a5f">#f03471</color>
+    <color name="theme_bar_top_bg">#f8f8f8</color>
+    <color name="exp_item_select">#D9D9D9</color>
+    <color name="e6e6e6">#e6e6e6</color>
+    <color name="f7f7f6">#f7f7f6</color>
+    <color name="a999999">#999999</color>
+    <color name="f8f8f8">#f8f8f8</color>
 </resources>

@@ -93,7 +93,7 @@
                 android:textSize="56sp"
                 android:visibility="gone" />
 
-            <com.halobear.wedqq.special.ui.location.select.view.SideBar
+            <bill.choosecity.view.SideBar
                 android:id="@+id/sidebar"
                 android:layout_width="30.0dip"
                 android:layout_height="fill_parent"

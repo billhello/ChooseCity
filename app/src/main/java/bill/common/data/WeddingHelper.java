@@ -4,14 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.halobear.awedqq.home.ui.common.bean.CateBean;
-import com.halobear.awedqq.home.ui.common.bean.WeddingClassifyBean;
-import com.halobear.awedqq.home.ui.common.bean.WeddingItemBean;
-import com.halobear.bwedqq.prepare.ui.bean.LuckDayBean;
-import com.halobear.bwedqq.prepare.ui.bean.ScheduleBean;
-import com.halobear.wedqq.data.databases.sqltable.LuckyDayTable;
-import com.halobear.wedqq.data.databases.sqltable.SchedulePlanTable;
-
 import java.util.List;
 
 import bill.choosecity.bean.ListBean;
@@ -71,30 +63,13 @@ public class WeddingHelper extends SQLiteOpenHelper {
         if (oldVersion < 1)
             return;
         switch (oldVersion) {
-            case 1:
-                WeddingCategoryTable.insertWeddingCategory(db, TABLEWEDDINGCATEGORY, "精选视频", "6", "video", "无", "无");
-                WeddingTable.insertWedding(db, TABLEWEDDING, "12", "婚礼周边", "0", "btn_dis_ser_circum", "2", "12", "无", "无");
-                break;
-            case 2:
-                WeddingTable.insertWedding(db, TABLEWEDDING, "12", "婚礼周边", "0", "btn_dis_ser_circum", "2", "12", "无", "无");
-                break;
+
             default:
                 break;
         }
     }
 
 
-    /**
-     * 返回类型中id对应的名称
-     *
-     * @param type   team or company
-     * @param cateid
-     * @return
-     */
-    public WeddingItemBean getWeddingItemName(String type, String cateid) {
-        return WeddingTable.getWeddingItemName(
-                databaseHelper.getReadableDatabase(), TABLEWEDDING, type, cateid);
-    }
 
     /**
      * 某个分类下的数目
@@ -141,55 +116,9 @@ public class WeddingHelper extends SQLiteOpenHelper {
                 databaseHelper.getReadableDatabase(), TABLEWEDDING, type);
     }
 
-    /**
-     * 将获得的精选婚礼数据写入数据库
-     *
-     * @param type
-     * @param content
-     */
-    public void writeWeddingCateToDb(List<CateBean.CateData> content, int type) {
-        WeddingTable.writeWeddingCateToDb(databaseHelper.getWritableDatabase(),
-                TABLEWEDDING, content, type);
-    }
 
-    /**
-     * 根据指定日期得到黄道节日信息
-     *
-     * @param day
-     * @return
-     */
-    public LuckDayBean getLuckDayBean(String day) {
-        return LuckyDayTable.getLuckDayBean(
-                databaseHelper.getReadableDatabase(), TABLELUCKYDAY, day);
-    }
 
-    /**
-     * 获取所有的日程
-     *
-     * @return
-     */
-    public List<ScheduleBean> getScheduleBeans() {
-        return SchedulePlanTable.getScheduleBean(
-                databaseHelper.getReadableDatabase(), TABLESCHEDULE);
-    }
 
-    /**
-     * 返回首页的分类
-     *
-     * @param type
-     * @return
-     */
-    public WeddingClassifyBean getWeddingClassifytBean(int type) {
-        return WeddingCategoryTable.getWeddingClassifytBean(
-                databaseHelper.getReadableDatabase(), TABLEWEDDINGCATEGORY,
-                TABLEWEDDING, type);
-    }
-
-    public WeddingClassifyBean getWeddingClassifytBean(String info1) {
-        return WeddingCategoryTable.getWeddingClassifytBean(
-                databaseHelper.getReadableDatabase(), TABLEWEDDINGCATEGORY,
-                TABLEWEDDING, info1);
-    }
 
     /**
      * 获得省份列表
@@ -240,16 +169,6 @@ public class WeddingHelper extends SQLiteOpenHelper {
                 parentId);
     }
 
-    /**
-     * 将获得的精选婚礼数据更新写入数据库
-     *
-     * @param type
-     * @param content
-     */
-    public void updateWeddingCateToDb(List<CateBean.CateData> content, int type) {
-        WeddingTable.updateWeddingCateToDb(
-                databaseHelper.getWritableDatabase(), content, type);
-    }
 
     /**
      * 根据regionId 返回地区列表

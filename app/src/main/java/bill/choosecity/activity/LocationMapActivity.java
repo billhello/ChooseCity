@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.amap.api.maps2d.model.LatLng;
-import com.halobear.wedqq.R;
-import com.halobear.wedqq.common.tools.ToastUtil;
-import com.halobear.wedqq.ui.base.BaseActivity;
+
+import bill.choosecity.R;
+import bill.common.base.BaseActivity;
+import bill.common.utils.ToastUtil;
 
 /**
  * 显示地理位置的界面

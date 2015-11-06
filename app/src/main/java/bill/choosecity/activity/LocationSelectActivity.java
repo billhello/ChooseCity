@@ -21,7 +21,6 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.halobear.wedqq.amain.fragment.ChoiceFragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -117,16 +116,7 @@ public class LocationSelectActivity extends BaseActivity implements OnSelectLoca
         activity.finish();
     }*/
 
-    /**
-     * 点击精选地址跳转
-     *
-     * @param fragment
-     * @param requestCode
-     */
-    public static void startActivityForResult(ChoiceFragment fragment, int requestCode) {
-        Intent intent = new Intent(fragment.getActivity(), LocationSelectActivity.class);
-        fragment.startActivityForResult(intent, requestCode);
-    }
+
 
     /**
      * 点击精选地址跳转

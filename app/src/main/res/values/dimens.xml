@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="circle_progress">35dp</dimen>
+    <dimen name="p11dp">11dp</dimen>
+    <dimen name="p3dp">3dp</dimen>
+    <dimen name="p17dp">17dp</dimen>
+    <dimen name="p12dp">12dp</dimen>
+    <dimen name="p4dp">4dp</dimen>
+    <dimen name="p4_5dp">4.5dp</dimen>
+    <dimen name="p6dp">6dp</dimen>
+    <dimen name="p16dp">16dp</dimen>
+    <dimen name="p9dp">9dp</dimen>
+    <dimen name="p2dp">2dp</dimen>
+    <dimen name="p10dp">10dp</dimen>
+    <dimen name="p36dp">36dp</dimen>
+    <!-- 日历尺寸 -->
+    <dimen name="date_widgetday_cell_textsize">11sp</dimen>
+    <!-- <dimen name="date_widgetday_cell_bgsize">42dp</dimen> -->
+    <dimen name="date_widgetday_cell_frameheader_textsize">10sp</dimen>
+    <!-- <dimen name="date_widgetday_cell_frameheader_bgwidth">42dp</dimen> -->
+    <!-- <dimen name="date_widgetday_cell_frameheader_bgheight">21dp</dimen> -->
+
+    <dimen name="d5">5dp</dimen>
+
+    <dimen name="emoji_normal">24dp</dimen>
+    <dimen name="emoji_monkey">60dp</dimen>
+
+    <dimen name="size_default_height">160.0dip</dimen>
+    <!-- 我的话题文字的大小 -->
+    <dimen name="setting_title_text_size">19sp</dimen>
+</resources>

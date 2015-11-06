@@ -13,7 +13,8 @@ import com.amap.api.maps2d.UiSettings;
 import com.amap.api.maps2d.model.BitmapDescriptorFactory;
 import com.amap.api.maps2d.model.LatLng;
 import com.amap.api.maps2d.model.MarkerOptions;
-import com.halobear.wedqq.R;
+
+import bill.choosecity.R;
 
 /**
  * 地图

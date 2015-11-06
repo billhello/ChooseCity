@@ -10,7 +10,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
-import com.halobear.wedqq.R;
+import bill.choosecity.R;
+
 
 public class SideBar extends View {
     // 触摸事件
